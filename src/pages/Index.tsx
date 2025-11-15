@@ -55,7 +55,7 @@ const Index = () => {
     <div className="min-h-screen bg-gradient-to-br from-white via-cyan-50/30 to-white">
       <Button 
         onClick={scrollToContact}
-        className="fixed top-6 right-6 bg-cyan-600 hover:bg-cyan-700 text-white shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-0.5 z-50 animate-fade-in"
+        className="fixed top-6 left-6 bg-cyan-600 hover:bg-cyan-700 text-white shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-0.5 z-50 animate-fade-in"
       >
         <Icon name="MessageCircle" size={18} className="mr-2" />
         Свяжитесь с нами
