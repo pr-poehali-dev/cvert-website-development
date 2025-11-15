@@ -171,10 +171,19 @@ const Index = () => {
             <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
               Получите консультацию наших специалистов и индивидуальное коммерческое предложение
             </p>
+            <div className="mb-6">
+              <p className="text-gray-700 font-medium mb-1">Генеральный директор</p>
+              <p className="text-cyan-900 font-semibold text-lg">Андрей Галиней</p>
+              <a href="tel:+79258054064" className="text-cyan-600 hover:text-cyan-700 font-semibold text-xl transition-colors">
+                +7 925 805 40 64
+              </a>
+            </div>
             <div className="flex flex-wrap justify-center gap-4">
-              <Button className="bg-cyan-600 hover:bg-cyan-700 text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-0.5">
-                <Icon name="Phone" size={18} className="mr-2" />
-                Позвонить
+              <Button asChild className="bg-cyan-600 hover:bg-cyan-700 text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-0.5">
+                <a href="tel:+79258054064">
+                  <Icon name="Phone" size={18} className="mr-2" />
+                  Позвонить
+                </a>
               </Button>
               <Button variant="outline" className="border-cyan-600 text-cyan-700 hover:bg-cyan-50 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-0.5">
                 <Icon name="Mail" size={18} className="mr-2" />
