@@ -45,8 +45,19 @@ const Index = () => {
     }
   };
 
+  const scrollToContact = () => {
+    document.getElementById('contact-section')?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-white via-cyan-50/30 to-white">
+      <Button 
+        onClick={scrollToContact}
+        className="fixed top-6 right-6 bg-cyan-600 hover:bg-cyan-700 text-white shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-0.5 z-50 animate-fade-in"
+      >
+        <Icon name="MessageCircle" size={18} className="mr-2" />
+        Свяжитесь с нами
+      </Button>
       <div className="container mx-auto px-4 py-6">
         <div className="flex gap-3 mb-12 overflow-x-auto pb-2 animate-fade-in">
           {tabs.map((tab) => (
@@ -154,7 +165,7 @@ const Index = () => {
           </Card>
         </div>
 
-        <Card className="p-10 border-cyan-100 bg-gradient-to-br from-cyan-50 to-white shadow-xl shadow-cyan-100/50">
+        <Card id="contact-section" className="p-10 border-cyan-100 bg-gradient-to-br from-cyan-50 to-white shadow-xl shadow-cyan-100/50">
           <div className="text-center">
             <h2 className="text-3xl font-bold text-cyan-900 mb-6">Свяжитесь с нами</h2>
             <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
