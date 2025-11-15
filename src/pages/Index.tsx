@@ -14,7 +14,7 @@ const Index = () => {
 
   const tabContent = {
     about: {
-      title: 'О компании ЦВЕРТ',
+      title: 'О компании ЦВЭРТ',
       description: 'Мы — ведущий производитель промышленного оборудования с многолетним опытом работы. Наша команда специализируется на разработке и внедрении современных технологических решений для различных отраслей промышленности.',
       points: [
         'Более 10 лет на рынке промышленного оборудования',
@@ -92,7 +92,7 @@ const Index = () => {
               <div className="h-1 w-12 bg-gradient-to-l from-transparent to-cyan-600 rounded-full"></div>
             </div>
             <h1 className="text-6xl font-bold bg-gradient-to-r from-cyan-700 to-cyan-500 bg-clip-text text-transparent mb-3">
-              ЦВЕРТ
+              ЦВЭРТ
             </h1>
             <div className="h-1 w-full bg-gradient-to-r from-transparent via-cyan-600 to-transparent rounded-full mb-6"></div>
           </div>
